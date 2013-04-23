@@ -50,6 +50,19 @@
 		<android.version>4.1.1.4</android.version>
 		<android.platform>16</android.platform>
 	</properties>
+	
+	<distributionManagement>
+        <repository>
+            <id>fakerepo</id>
+            <name>Local file system repo</name>
+            <url>file:////Users/rfreedman/local-mvn-repo/repo</url>
+        </repository>
+        <snapshotRepository>
+            <id>fakesnapshotrepo</id>
+            <name>Local file system snapshot repo</name>
+            <url>file:////Users/rfreedman/local-mvn-repo/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
@@ -60,20 +73,6 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
-	
-	<distributionManagement>
-        <repository>
-            <id>fakerepo</id>
-            <name>Local file system</name>
-            <url>file:////Users/rfreedman/local-mvn-repo/repo</url>
-        </repository>
-        <snapshotRepository>
-            <id>fakesnapshotrepo</id>
-            <name>Local file system</name>
-            <url>file:////Users/rfreedman/local-mvn-repo/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
 
 	<build>
 		<pluginManagement>
