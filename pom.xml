@@ -2,17 +2,17 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-<!--
+
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
--->
+
 	<groupId>com.emilsjolander</groupId>
 	<artifactId>stickylistheaders-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 
 	<name>StickyListHeaders (Parent)</name>
 	<description>A small android library that makes it easy to make lists with section headers that stick to the top until a new section header comes along.</description>
@@ -50,23 +50,6 @@
 		<android.version>4.1.1.4</android.version>
 		<android.platform>16</android.platform>
 	</properties>
-	
-	<distributionManagement>
-        <repository>
-            <id>fakerepo</id>
-            <name>Local file system repo</name>
-            <url>file:////Users/rfreedman/local-mvn-repo/repo</url>
-			<uniqueVersion>false</uniqueVersion>
-			<layout>default</layout>
-        </repository>
-        <snapshotRepository>
-            <id>fakesnapshotrepo</id>
-            <name>Local file system snapshot repo</name>
-            <url>file:////Users/rfreedman/local-mvn-repo/snapshots</url>
-			<uniqueVersion>false</uniqueVersion>
-			<layout>default</layout>
-        </snapshotRepository>
-    </distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
