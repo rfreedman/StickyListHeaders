@@ -56,11 +56,15 @@
             <id>fakerepo</id>
             <name>Local file system repo</name>
             <url>file:////Users/rfreedman/local-mvn-repo/repo</url>
+			<uniqueVersion>false</uniqueVersion>
+			<layout>default</layout>
         </repository>
         <snapshotRepository>
             <id>fakesnapshotrepo</id>
             <name>Local file system snapshot repo</name>
             <url>file:////Users/rfreedman/local-mvn-repo/snapshots</url>
+			<uniqueVersion>false</uniqueVersion>
+			<layout>default</layout>
         </snapshotRepository>
     </distributionManagement>
 
